@@ -1,4 +1,6 @@
-﻿namespace Dars3
+﻿using System.Globalization;
+
+namespace Dars3
 {
     internal class Program
     {
@@ -518,6 +520,59 @@ int a = n / 100;
 int b = n % 100/10;
 int c = n % 10;
 Console.Write(c);Console.Write(b);Console.Write(a);*/
+
+
+
+
+            /* for(int i = 100; i >= 999; i++)
+             {
+                 int r1 = i / 100;
+                 int r2 = i / 100 % 10;
+                 int r3 = i % 10;
+
+                 if (r1%2!=0 || r2%2!=0 || r3%2!=0)
+                 {
+                     Console.Write($"{i}, ");
+                 }
+             }*/
+
+            Console.Write("1-chi sonni kiriting:");
+            int a=int.Parse(Console.ReadLine());
+            Console.Write("2 - chi sonni kiriting:");
+            int b=int.Parse(Console.ReadLine());
+
+            int counter1 = 0;
+            int counter2 = 0;
+
+            for (int i = 0; i < a; i++)
+            {
+                if(a%i == 0)
+                {
+                    counter1++;
+                }
+            }
+
+            for (int i = 0; i < b; i++)
+            {
+                if (b % i == 0)
+                {
+                    counter2++;
+                }
+                if (counter1 == 2 || counter2 == 2)
+                {
+                    Console.Write($"{counter1 + counter2}");
+
+                }
+                else
+                {
+                    Console.Write($"{counter1 * counter2}");
+                }
+
+
+
+            }
+
+
         }
     }
 }
