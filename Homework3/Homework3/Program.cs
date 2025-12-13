@@ -13,10 +13,10 @@
 
             //#2
 
-            for (int i = 25; i <= 100; i++)
-            {
-                Console.Write($"{i} ");
-            }
+            //for (int i = 25; i <= 100; i++)
+            //{
+            //    Console.Write($"{i} ");
+            //}
 
             //#3
 
@@ -415,16 +415,16 @@
             //        counter += i;
             //}
             //Console.Write(counter);
-
+             
             //#31
 
-            //Console.Write("1kg konfet narxini kiriting: ");
-            //int kg = int.Parse(Console.ReadLine());
+            Console.Write("1kg konfet narxini kiriting: ");
+            var kg = float.Parse(Console.ReadLine());
 
-            //for (float i = 1; i < 2; i++)
-            //{
-            //    Console.Write($"{i * kg} ");
-            //}
+            for (var i = 1.1; i <= 2; i+=0.1)
+            {
+                Console.Write($"{i * kg} ");
+            }
         }
     }
 }
